@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuBar from './components/MenuBar/MenuBar';
 import MainBody from './components/MainBody/MainBody';
 import SideBar from './components/SideBar/SideBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,9 @@ function App() {
         </div>
         
       </div>
+      {/* <div><FontAwesomeIcon icon={['fab', 'apple']} />
+      <FontAwesomeIcon icon={['fab', 'microsoft']} />
+      <FontAwesomeIcon icon={['fab', 'google']} /></div> */}
       
     </div>
   )

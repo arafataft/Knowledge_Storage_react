@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const MainBody = () => {
     return (
@@ -26,9 +28,7 @@ const MainBody = () => {
                         </div>
                         <div className='d-flex text-muted'>
                             <p>5min need</p>
-                            <span>
-                                
-                            </span>
+                            <div><button>F</button></div>
                         </div>
 
                         
@@ -38,6 +38,7 @@ const MainBody = () => {
                         <h3>How become number One All rounder</h3>
                         <a href="/read">Make as read</a>
                     </div>
+                    
 
                 </div>
             </div>

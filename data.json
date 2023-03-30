@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "Author_name": "Sakib Al Hasan",
+      "Blog_title": "How to become the number one all-rounder in the world",
+      "coverImage": "https://picsum.photos/800/300?random=1",
+      "authorImage": "https://picsum.photos/500/500?random=2",
+      "readTime": 10,
+      "published": "Mar 14 (4 Days ago)"
+    },
+    {
+      "id": 2,
+      "Author_name": "Elon Mask",
+      "Blog_title": "How to become the number one Rich Man in the world",
+      "coverImage": "https://picsum.photos/800/300?random=3",
+      "authorImage": "https://picsum.photos/500/500?random=4",
+      "readTime": 20,
+      "published": "jan 29 (7 Days ago)"
+    },
+    {
+      "id": 3,
+      "Author_name": "Hero Alam",
+      "Blog_title": "How to become the number one Viral person in Bangladesh",
+      "coverImage": "https://picsum.photos/800/300?random=5",
+      "authorImage": "https://picsum.photos/500/500?random=6",
+      "readTime": 15,
+      "published": "Feb 14 (4 Days ago)"
+    },
+    {
+      "id": 4,
+      "Author_name": "Ananta Jalil",
+      "Blog_title": "How to make the impossible possible",
+      "coverImage": "https://picsum.photos/800/300?random=7",
+      "authorImage": "https://picsum.photos/500/500?random=8",
+      "readTime": 8,
+      "published": "May 14 (3 Days ago)"
+    }
+  ]
