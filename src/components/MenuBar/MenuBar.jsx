@@ -3,7 +3,7 @@ import logo from '../../assets/author/author1.png'
 
 const MenuBar = () => {
     return (
-        <div>
+        <div className='mb-5'>
             <nav className="p-2 navbar navbar-light bg-light justify-content-between">
                 <a className="navbar-brand">Knowledge Storage</a>
                 <div className='d-flex justify-content-between'>
