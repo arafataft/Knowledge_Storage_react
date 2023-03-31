@@ -6,7 +6,7 @@
       "coverImage": "https://picsum.photos/800/300?random=1",
       "authorImage": "https://picsum.photos/500/500?random=2",
       "readTime": 10,
-      "published": "Mar 14 (4 Days ago)"
+      "published": "Dec 14 (Long Days ago)"
     },
     {
       "id": 2,
@@ -15,16 +15,16 @@
       "coverImage": "https://picsum.photos/800/300?random=3",
       "authorImage": "https://picsum.photos/500/500?random=4",
       "readTime": 20,
-      "published": "jan 29 (7 Days ago)"
+      "published": "jan 29 (Long Days ago)"
     },
     {
       "id": 3,
       "Author_name": "Hero Alam",
-      "Blog_title": "How to become the number one Viral person in Bangladesh",
+      "Blog_title": "How to become Viral person in Social Media",
       "coverImage": "https://picsum.photos/800/300?random=5",
       "authorImage": "https://picsum.photos/500/500?random=6",
       "readTime": 15,
-      "published": "Feb 14 (4 Days ago)"
+      "published": "Feb 14 (Long Days ago)"
     },
     {
       "id": 4,
@@ -33,6 +33,6 @@
       "coverImage": "https://picsum.photos/800/300?random=7",
       "authorImage": "https://picsum.photos/500/500?random=8",
       "readTime": 8,
-      "published": "May 14 (3 Days ago)"
+      "published": "june 14 (Long Days ago)"
     }
   ]

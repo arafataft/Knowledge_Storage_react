@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const SingleCard = ({infoCard,handleSpentTime}) => {
+const SingleCard = ({infoCard,handleSpentTime,handleBookmark}) => {
     const {authorImage,coverImage,Author_name,Blog_title,readTime,published}=infoCard;
 
     return (
@@ -28,8 +28,8 @@ const SingleCard = ({infoCard,handleSpentTime}) => {
                             </div>
                         </div>
                         <div className='d-flex text-muted'>
-                            <p><span>{readTime}</span> min need</p>
-                            <div className='px-1'><button ><FontAwesomeIcon icon={faBookmark} /></button></div>
+                            <p><span>{readTime}</span> min read</p>
+                            <div className='px-1'><button onClick={()=>handleBookmark(Blog_title)}><FontAwesomeIcon icon={faBookmark} /></button></div>
                         </div>
 
                         
@@ -37,7 +37,7 @@ const SingleCard = ({infoCard,handleSpentTime}) => {
 
                     <div className='px-2'>
                         <h3>{Blog_title}</h3>
-                        <button onClick={()=>handleSpentTime(readTime)} className="btn btn-link">Make as read</button>
+                        <button onClick={()=>handleSpentTime(readTime)} className="btn btn-link">Mark as read</button>
                     </div>
                     
 
