@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuBar from './components/MenuBar/MenuBar';
 import MainBody from './components/MainBody/MainBody';
 import SideBar from './components/SideBar/SideBar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -15,12 +16,18 @@ function App() {
   const [titles, setTitle] = useState([]);
   const [count,setCount]=useState(0);
 
+  const notify = () => toast("Already in Bookmark!");
+
   const handleSpentTime = (spentTime) => {
     setTime(time + spentTime);
   }
 
   const handleBookmark = (title) => {
     const newTitle = title;
+    if(titles.find(cart=>cart===newTitle)){
+      notify();
+      return;
+    }
     setCount(count+1);
     setTitle(prevArray => [...prevArray, newTitle]);
   }
@@ -45,7 +52,7 @@ function App() {
         </div>
 
       </div>
-
+      <ToastContainer></ToastContainer>
 
     </div>
   )
