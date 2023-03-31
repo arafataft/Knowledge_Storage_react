@@ -3,8 +3,10 @@ import SingleCard from '../SingleCard/SingleCard';
 
 
 
-const MainBody = () => {
+const MainBody = ({handleSpentTime}) => {
     const [infoCards,setInfoCards]=useState([]);
+
+    // console.log(handleSpentTime);
 
     useEffect(()=>{
         fetch("../../../data.json")
@@ -17,7 +19,7 @@ const MainBody = () => {
         <div>
             <div className='info-container px-3'>
                 {
-                infoCards.map((infoCard)=>(<SingleCard infoCard={infoCard} key={infoCard.id}></SingleCard>))
+                infoCards.map((infoCard)=>(<SingleCard handleSpentTime={handleSpentTime} infoCard={infoCard} key={infoCard.id}></SingleCard>))
                 }
             </div>
 

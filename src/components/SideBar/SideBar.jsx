@@ -1,9 +1,11 @@
 import React from 'react';
+import SpentTime from '../SpentTime/SpentTime';
 
-const SideBar = () => {
+const SideBar = ({time}) => {
     return (
-        <div>
-            <h4>This is sideBar</h4>
+        <div >
+            <SpentTime time={time}></SpentTime>
+            
         </div>
     );
 };

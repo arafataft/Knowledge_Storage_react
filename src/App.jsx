@@ -10,7 +10,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [time,setTime]=useState(0);
+  const handleSpentTime = (spentTime) => {
+    setTime(time+spentTime);
+  }
 
   return (
     <div className='container'>
@@ -18,12 +22,12 @@ function App() {
 
       <div className="mainBody row">
         <div className="bodyContainer col-md-8">
-          <MainBody></MainBody>
+          <MainBody handleSpentTime={handleSpentTime}></MainBody>
         </div>
 
         <div className="sideBar col-md-4">
-          <div className='card mb-3'>
-          <SideBar></SideBar>
+          <div>
+          <SideBar time={time}></SideBar>
           </div>
           {/* <div className='card'>
           <SideBar></SideBar>
