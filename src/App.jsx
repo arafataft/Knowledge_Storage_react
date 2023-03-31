@@ -21,14 +21,17 @@ function App() {
           <MainBody></MainBody>
         </div>
 
-        <div className="sideBar card col-md-4">
+        <div className="sideBar col-md-4">
+          <div className='card mb-3'>
           <SideBar></SideBar>
+          </div>
+          {/* <div className='card'>
+          <SideBar></SideBar>
+          </div> */}
         </div>
         
       </div>
-      {/* <div><FontAwesomeIcon icon={['fab', 'apple']} />
-      <FontAwesomeIcon icon={['fab', 'microsoft']} />
-      <FontAwesomeIcon icon={['fab', 'google']} /></div> */}
+     
       
     </div>
   )
