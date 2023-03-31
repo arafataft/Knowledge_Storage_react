@@ -6,7 +6,8 @@
       "coverImage": "https://picsum.photos/800/300?random=1",
       "authorImage": "https://picsum.photos/500/500?random=2",
       "readTime": 10,
-      "published": "Dec 14 (Long Days ago)"
+      "published": "Dec 14 (Long Days ago)",
+      "tag":"#Cricket  #All_rounder #captain "
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "coverImage": "https://picsum.photos/800/300?random=3",
       "authorImage": "https://picsum.photos/500/500?random=4",
       "readTime": 20,
-      "published": "jan 29 (Long Days ago)"
+      "published": "jan 29 (Long Days ago)",
+      "tag":"#rich #Tesla #SpaceX #"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "coverImage": "https://picsum.photos/800/300?random=5",
       "authorImage": "https://picsum.photos/500/500?random=6",
       "readTime": 15,
-      "published": "Feb 14 (Long Days ago)"
+      "published": "Feb 14 (Long Days ago)",
+      "tag":"#viral  #comedy #hero "
     },
     {
       "id": 4,
@@ -33,6 +36,7 @@
       "coverImage": "https://picsum.photos/800/300?random=7",
       "authorImage": "https://picsum.photos/500/500?random=8",
       "readTime": 8,
-      "published": "june 14 (Long Days ago)"
+      "published": "june 14 (Long Days ago)",
+      "tag":"#hero #movie #businessMan"
     }
   ]

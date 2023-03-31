@@ -8,6 +8,7 @@ import MainBody from './components/MainBody/MainBody';
 import SideBar from './components/SideBar/SideBar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blog from './components/Blog/Blog';
 
 
 function App() {
@@ -18,13 +19,16 @@ function App() {
 
   const notify = () => toast("Already in Bookmark!");
 
+  //mark as read button function  
   const handleSpentTime = (spentTime) => {
     setTime(time + spentTime);
   }
 
+  //bookmark button function
   const handleBookmark = (title) => {
     const newTitle = title;
-    if(titles.find(cart=>cart===newTitle)){
+    if(titles.find(item=>item===newTitle)){
+      //if already in card toast and return from here
       notify();
       return;
     }
@@ -46,13 +50,14 @@ function App() {
           <div>
             <SideBar time={time} titles={titles} count={count}></SideBar>
           </div>
-          {/* <div className='card'>
-          <SideBar></SideBar>
-          </div> */}
+          
         </div>
 
+        
+
       </div>
-      <ToastContainer></ToastContainer>
+      <ToastContainer></ToastContainer> 
+      <Blog></Blog> 
 
     </div>
   )
