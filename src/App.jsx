@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuBar from './components/MenuBar/MenuBar';
@@ -39,15 +37,17 @@ function App() {
 
   return (
     <div className='container'>
+      {/* navBar */}
       <MenuBar></MenuBar>
-
       <div className="mainBody row">
         <div className="bodyContainer col-md-8">
+          {/* All card */}
           <MainBody handleSpentTime={handleSpentTime} handleBookmark={handleBookmark}></MainBody>
         </div>
 
         <div className="sideBar col-md-4">
           <div>
+            {/* side card bar */}
             <SideBar time={time} titles={titles} count={count}></SideBar>
           </div>
           
@@ -56,7 +56,8 @@ function App() {
         
 
       </div>
-      <ToastContainer></ToastContainer> 
+      <ToastContainer></ToastContainer>
+      {/* blog  */}
       <Blog></Blog> 
 
     </div>

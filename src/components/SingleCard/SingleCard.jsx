@@ -29,6 +29,7 @@ const SingleCard = ({infoCard,handleSpentTime,handleBookmark}) => {
                         </div>
                         <div className='d-flex text-muted'>
                             <p><span>{readTime}</span> min read</p>
+                            {/* Bookmark Button  */}
                             <div className='px-1'><button className='btn btn-light btn-sm' onClick={()=>handleBookmark(Blog_title)}><FontAwesomeIcon icon={faBookmark} /></button></div>
                         </div>
 
@@ -38,6 +39,7 @@ const SingleCard = ({infoCard,handleSpentTime,handleBookmark}) => {
                     <div className='px-2'>
                         <h3>{Blog_title}</h3>
                         <p className='text-muted'>{tag}</p>
+                        {/* mark as read button  */}
                         <button onClick={()=>handleSpentTime(readTime)} className="btn btn-link">Mark as read</button>
                     </div>
                     

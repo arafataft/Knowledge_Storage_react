@@ -8,7 +8,7 @@ const MainBody = ({handleSpentTime,handleBookmark}) => {
 
 
     useEffect(()=>{
-        fetch("../../../data.json")
+        fetch("data.json")
         .then((res)=>res.json())
         .then((data)=>setInfoCards(data));
     },[])
@@ -18,6 +18,7 @@ const MainBody = ({handleSpentTime,handleBookmark}) => {
         <div>
             <div className='info-container px-3'>
                 {
+                    // single card data 
                 infoCards.map((infoCard)=>(<SingleCard handleSpentTime={handleSpentTime} handleBookmark={handleBookmark} infoCard={infoCard} key={infoCard.id}></SingleCard>))
                 }
             </div>
